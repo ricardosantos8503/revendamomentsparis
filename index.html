@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revendedor MomentsParis - Perfumes de Luxo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Revendedor MomentsParis</h1>
+            <p>Perfumes que marcam</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+<div id="reseller-banner" class="hidden">
+    <p>Revendedor: <span id="reseller-name"></span></p>
+</div>
+    <main>
+        <section class="hero">
+            <h2>Descubra sua assinatura olfativa</h2>
+            <p>Perfumes exclusivos para momentos inesquecíveis</p>
+            <a href="#products" class="btn">Explorar Coleção</a>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Nossos Perfumes</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Produtos serão adicionados via JavaScript -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Sobre Nós</h2>
+            <p>Essência Pura é uma revendedora autorizada das melhores marcas de perfumaria do mundo. Trabalhamos diretamente com os fornecedores para oferecer produtos autênticos com os melhores preços.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
+            <p>Escolha um produto ao enviar pro vendedor ele ira entrar em contato.</p>
+
+        </section>
+    </main>
+
+    <!-- Modal do Carrinho -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total">R$ 0,00</span></p>
+            </div>
+            <button id="send-to-reseller" class="btn">Enviar para Revendedor</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Revendedor MomentsParis. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
